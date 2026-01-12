@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Papa! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti"></div>
+    
+    <!-- Confetti Launcher -->
+    <div class="confetti-launcher" id="confettiLauncher">
+        <div class="launcher-cannon">
+            <div class="launcher-spark"></div>
+        </div>
+        <div class="launcher-base"></div>
+    </div>
+
+    <!-- Floating Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="title-wrapper">
+                    <h1 class="main-title">Happy Birthday</h1>
+                    <h2 class="name-title">Papa</h2>
+                </div>
+                <p class="subtitle">Celebrating you and all our beautiful memories together</p>
+                <div class="header-buttons">
+                    <button class="celebrate-btn" onclick="triggerCelebration()">
+                        <span>🎊</span> Celebrate
+                    </button>
+                    <a href="sms:9252196444?body=Happy%20Birthday" class="sms-btn">
+                        <span>💌</span> Say Happy Birthday
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Interactive Slideshow Section -->
+        <section class="slideshow-section">
+            <div class="section-header">
+                <h2 class="section-title-main">Beautiful Memories</h2>
+                <p class="section-subtitle">Hover to zoom • Click to interact</p>
+            </div>
+            <div class="slideshow-container" id="slideshowContainer">
+                <div class="slideshow-wrapper" id="slideshowWrapper">
+                    <div class="slide active" data-index="0">
+                        <div class="slide-inner">
+                            <img src="IMG_9038.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager" fetchpriority="high">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="1">
+                        <div class="slide-inner">
+                            <img src="IMG_1177.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="2">
+                        <div class="slide-inner">
+                            <img src="IMG_1238.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="3">
+                        <div class="slide-inner">
+                            <img src="IMG_2042.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="4">
+                        <div class="slide-inner">
+                            <img src="IMG_2190.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="5">
+                        <div class="slide-inner">
+                            <img src="IMG_2360.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="6">
+                        <div class="slide-inner">
+                            <img src="IMG_2555.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="7">
+                        <div class="slide-inner">
+                            <img src="IMG_2806 3.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="8">
+                        <div class="slide-inner">
+                            <img src="IMG_3820.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="9">
+                        <div class="slide-inner">
+                            <img src="IMG_3964.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="10">
+                        <div class="slide-inner">
+                            <img src="IMG_4005.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 11</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="11">
+                        <div class="slide-inner">
+                            <img src="IMG_4429.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 12</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="12">
+                        <div class="slide-inner">
+                            <img src="IMG_5029.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 13</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="13">
+                        <div class="slide-inner">
+                            <img src="IMG_7932.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 14</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="14">
+                        <div class="slide-inner">
+                            <img src="IMG_8759.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 15</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="15">
+                        <div class="slide-inner">
+                            <img src="FullSizeRender 2.jpeg" alt="Beautiful Memory" class="slide-image" loading="eager">
+                            <div class="slide-overlay">
+                                <div class="slide-info">Memory 16</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slide-nav prev" onclick="changeSlide(-1)" aria-label="Previous">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="slide-nav next" onclick="changeSlide(1)" aria-label="Next">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+
+                <!-- Slide Indicators -->
+                <div class="slide-indicators" id="indicators">
+                    <!-- Generated by JS -->
+                </div>
+
+                <!-- Slide Counter -->
+                <div class="slide-counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">16</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="message-card">
+                <div class="message-icon">💝</div>
+                <h2 class="section-title">A Special Message</h2>
+                <div class="message-content">
+                    <p>Today is a day to celebrate you, Papa! You've been an incredible father, always there with love, wisdom, and endless support. Thank you for everything you do and for being the amazing person you are.</p>
+                    <p>Here's to another wonderful year filled with joy, laughter, and beautiful memories!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishes Section -->
+        <section class="wishes-section">
+            <h2 class="section-title-main">Birthday Wishes</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <div class="wish-icon">🎂</div>
+                    <h3>Health & Happiness</h3>
+                    <p>Wishing you the best health and endless happiness</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">🌟</div>
+                    <h3>Success & Prosperity</h3>
+                    <p>May all your dreams come true this year</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">❤️</div>
+                    <h3>Love & Laughter</h3>
+                    <p>Surrounded by love and filled with laughter</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">🎁</div>
+                    <h3>Amazing Adventures</h3>
+                    <p>May the year ahead be full of wonderful experiences</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Made with ❤️ for Papa - Kaaku</p>
+            <p class="footer-subtitle">Happy Birthday! 🎉🎈🎊</p>
+        </footer>
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <img class="modal-image" id="modalImage" src="" alt="Full size image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
